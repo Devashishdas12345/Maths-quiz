@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths quiz</title>
+
+    <script src="jmain.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body class="col-lg-5 col-md-7 col-sm-9 col-xs-11" onload="onLoad_123()">
+
+    <h4><span id="player1"></span><span id="score1"></span></h4>
+    <br>
+    <h4><span id="player2"></span><span id="score2"></span></h4>
+
+    <div class="container">
+        <center>
+            <h1><b>The Maths Quiz Game</b></h1>
+            <h2 id="question"><span id="question_turn"></span></h2>
+            <h2 id="answer"><span id="answer_turn"></span></h2>
+
+            <div id="output" class="col-lg-5 col-md-7 col-sm-9 col-xs-11"></div>
+            <br>
+            <br>
+            <div id="Something">
+            <h4><b>Send your word : </b><b id="Some">Try putting bigger and difficult numbers!!!</b></h4>
+            <br>
+            <h4><b>Number 1</b></h4>
+            <input type="number" id="Number1" class="col-lg-5 col-md-7 col-sm-9 col-xs-11 form-control" placeholder="Number 1">
+            <br>
+            <br>
+            <h4><b>Number 2</b></h4>
+            <input type="number" id="Number2" class="col-lg-5 col-md-7 col-sm-9 col-xs-11 form-control" placeholder="Number 2">
+            <br>
+            <br>
+            <br>
+            <button type="submit" onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+            </div> 
+            <br>
+        </center>
+    </div>
+<style>
+        body{
+	background: orangered;
+}
+
+#word{
+	width: 60%;
+}
+
+#word_display{
+	letter-spacing: 5px;
+}
+
+#output{
+background: linear-gradient(#a1c4fd 0% , #c2e9fb 100%);
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+
+#Some {
+    color: whitesmoke;
+}
+
+#Start {
+    display: none;
+}
+
+    </style>
+</body>
+</html>
